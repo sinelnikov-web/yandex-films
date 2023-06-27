@@ -5,7 +5,7 @@ import {filtersReducer} from "@/widgets/Filters";
 import {reviewApi} from "@/entities/Review";
 
 
-export function createReduxStore(initialState) {
+export function createReduxStore() {
     return configureStore({
         reducer: {
             [filmsApi.reducerPath]: filmsApi.reducer,
@@ -20,6 +20,5 @@ export function createReduxStore(initialState) {
             reviewApi.middleware,
         ),
         devTools: process.env.NODE_ENV !== 'production',
-        preloadedState: initialState
     })
 }

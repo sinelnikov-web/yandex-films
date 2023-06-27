@@ -7,14 +7,14 @@ export const filmsApi = createApi({
         baseUrl: 'http://localhost:3001/api/'
     }),
     endpoints: (build) => ({
-        fetchAllFilms: build.query<Film[], string>({
-            query: (cinemaId) => ({
+        fetchAllFilms: build.query<Film[], string | undefined>({
+            query: (cinemaId = undefined) => ({
                 url:  "movies/",
                 params: {cinemaId}
             })
         }),
-        fetchFilmById: build.query<Film, string>({
-            query: (movieId) => ({
+        fetchFilmById: build.query<Film, string | undefined>({
+            query: (movieId = undefined) => ({
                 url: "movie/",
                 params: {movieId}
             })

@@ -6,8 +6,8 @@ interface StoreProviderProps {
     children: ReactNode;
 }
 
-const StoreProvider: FC<StoreProviderProps> = ({children, initialState}) => {
-    const store = createReduxStore(initialState);
+const StoreProvider: FC<StoreProviderProps> = ({children}) => {
+    const store = createReduxStore();
 
     return (
         <Provider store={store}>

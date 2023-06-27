@@ -20,7 +20,9 @@ const FilmsList = () => {
 
     return (
         <div className={styles.filmsList}>
-            <Filters/>
+            <div className={styles.filmsList__sidebar}>
+                <Filters/>
+            </div>
             <div className={styles.filmsList__cards}>
                 {data?.filter(({genre, title}) => filterFilms(genre, title)).map(({id, title, genre, posterUrl}) => {
                     return (

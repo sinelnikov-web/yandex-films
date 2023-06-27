@@ -5,6 +5,19 @@
   max-height: 100%;
   overflow: hidden;
 
+
+  &__sidebar {
+    position: relative;
+    max-width: 408px;
+    width: 100%;
+
+    & > div {
+      position: fixed;
+      top: 107px;
+    }
+
+  }
+
   &__filters {
     flex-shrink: 0;
   }

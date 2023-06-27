@@ -2,9 +2,7 @@ import {createSlice, PayloadAction} from "@reduxjs/toolkit";
 
 const initialState = {};
 
-type InitialStateType = typeof initialState;
-
-export const basketSlice = createSlice<InitialStateType>({
+export const basketSlice = createSlice({
     name: 'basket',
     initialState,
     reducers: {
