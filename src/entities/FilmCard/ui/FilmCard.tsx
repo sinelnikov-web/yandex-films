@@ -3,10 +3,6 @@ import styles from './FilmCard.module.scss';
 import Image from "next/image";
 import Link from "next/link";
 
-const imageLoader = ({src, width, quality}) => {
-    return 'http://placehold.it/1920x1080'
-}
-
 type FilmCardProps = {
     img: string;
     title: string;
@@ -19,7 +15,7 @@ const FilmCard: FC<FilmCardProps> = ({filmId, img, title, genre, counter}) => {
     return (
         <div className={styles.filmCard}>
             <Image
-                loader={imageLoader}
+                loader={() => img}
                 width={100}
                 height={120}
                 src={img}
