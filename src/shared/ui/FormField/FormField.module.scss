@@ -1,0 +1,13 @@
+
+.formField {
+
+  &__label {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+
+    p {
+      font-size: 14px;
+    }
+  }
+}

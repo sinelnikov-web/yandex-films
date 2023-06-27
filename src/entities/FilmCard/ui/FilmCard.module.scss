@@ -1,0 +1,22 @@
+
+.filmCard {
+  display: flex;
+  gap: 24px;
+  border-radius: 8px;
+  background-color: var(--primary-bg);
+  width: 100%;
+  padding: 24px;
+
+  &__info {
+    flex-grow: 1;
+  }
+
+  &__title {
+    font: var(--font-s);
+    font-weight: 600;
+  }
+  &__genre {
+    font: var(--font-xs);
+    font-style: italic;
+  }
+}

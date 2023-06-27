@@ -1,0 +1,21 @@
+
+.filters {
+  width: 100%;
+  padding: 24px;
+  background: var(--primary-bg);
+  border-radius: 8px;
+  max-width: 408px;
+  height: 100%;
+
+  &__title {
+    font: var(--font-xs);
+    font-weight: 600;
+    margin-bottom: 20px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+}

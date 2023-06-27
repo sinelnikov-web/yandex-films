@@ -1,0 +1,19 @@
+
+.filmsList {
+  display: flex;
+  gap: 23px;
+  max-height: 100%;
+  overflow: hidden;
+
+  &__filters {
+    flex-shrink: 0;
+  }
+
+  &__cards {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    gap: 16px;
+    overflow-y: auto;
+  }
+}

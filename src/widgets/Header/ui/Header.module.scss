@@ -1,0 +1,43 @@
+
+.header {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  height: var(--header-height);
+  background: var(--secondary-bg);
+  width: 100%;
+  padding: 24px 32px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__logo {
+    color: var(--text-contrast);
+    font-weight: 700;
+    font-size: var(--font-size-xl);
+  }
+
+  &__basket {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+
+    div {
+      padding: 4px;
+      border-radius: 8px;
+      width: 28px;
+      height: 28px;
+      color: var(--text-contrast);
+      font-weight: 600;
+      font: var(--font-xxs);
+      background: var(--orange);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    svg path {
+        fill: var(--text-contrast)
+      }
+  }
+}

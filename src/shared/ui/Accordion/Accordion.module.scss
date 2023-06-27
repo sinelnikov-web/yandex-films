@@ -1,0 +1,12 @@
+
+.accordion {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+
+  &__head {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+  }
+}

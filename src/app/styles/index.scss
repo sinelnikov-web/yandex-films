@@ -1,0 +1,22 @@
+@import "reset";
+@import "variables/global";
+@import "variables/components";
+
+html,
+body {
+  max-width: 100vw;
+  overflow-x: hidden;
+}
+
+body {
+  height: calc(var(--vh, 1vh) * 100);
+  display: flex;
+  flex-direction: column;
+  font: var(--font-line-s);
+  color: var(--text-primary);
+}
+
+h1 {
+  font: var(--font-l);
+  font-weight: 600;
+}

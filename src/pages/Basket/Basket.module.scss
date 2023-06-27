@@ -1,0 +1,26 @@
+
+.basket {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  height: 100%;
+
+  &__list {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  &__summary {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+
+    h4, span {
+      font: var(--font-m);
+      font-weight: 600;
+    }
+  }
+}
