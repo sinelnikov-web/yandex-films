@@ -1,5 +1,5 @@
 "use client"
-import {FilmsList} from "@/pages/FilmsList";
+import {FilmsList} from "@/page/FilmsList";
 
 
 const App = () => {

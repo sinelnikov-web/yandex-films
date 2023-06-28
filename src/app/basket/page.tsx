@@ -1,4 +1,4 @@
 'use client'
-import {Basket} from "@/pages/Basket";
+import {Basket} from "@/page/Basket";
 
 export default Basket;

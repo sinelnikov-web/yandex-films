@@ -9,7 +9,7 @@ interface FilmReviewsListProps {
 const FilmReviewsList: FC<FilmReviewsListProps> = ({filmId}) => {
     const {data, isLoading} = useFetchReviewsByFilmIdQuery(filmId);
 
-    if (isLoading) {
+    if (isLoading || !data) {
         return null;
     }
 

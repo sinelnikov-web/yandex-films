@@ -6,9 +6,7 @@ const initialState = {
     title: ''
 };
 
-type InitialStateType = typeof initialState;
-
-export const filtersSlice = createSlice<InitialStateType>({
+export const filtersSlice = createSlice({
     name: 'filters',
     initialState,
     reducers: {

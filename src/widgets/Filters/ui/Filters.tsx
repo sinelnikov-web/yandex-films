@@ -12,7 +12,7 @@ import {useDebounce} from "@/shared/hooks/useDebounce";
 const Filters = () => {
     const {cinemaId, genreId} = useSelector(filtersSelector);
     const {data: filmsData, isLoading: isFilmsLoading} = useFetchAllFilmsQuery(cinemaId ?? undefined);
-    const {data: cinemasData, isCinemasLoading} = useFetchAllCinemasQuery()
+    const {data: cinemasData, isLoading: isCinemasLoading} = useFetchAllCinemasQuery()
     const [search, setSearch] = useState('');
     const debouncedSearch = useDebounce(search);
     const dispatch = useDispatch();
@@ -52,7 +52,7 @@ const Filters = () => {
                     label={"Название"}
                     element={
                         <Input
-                            onChange={(e) => setSearch(e.target.value)}
+                            onChange={(e: any) => setSearch(e.target.value)}
                             placeholder={'Введите название'}
                         />}
                 />

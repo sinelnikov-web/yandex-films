@@ -1,3 +1,4 @@
+'use client'
 import React from 'react';
 import {Filters, filtersSelector} from "@/widgets/Filters";
 import {FilmCard} from "@/entities/FilmCard";

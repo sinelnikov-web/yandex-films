@@ -1,3 +1,3 @@
-import {FilmDetail} from "@/pages/FilmDetail";
+import {FilmDetail} from "@/page/FilmDetail";
 
 export default FilmDetail;

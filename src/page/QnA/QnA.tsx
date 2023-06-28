@@ -1,4 +1,3 @@
-'use client'
 import React from 'react';
 import {Accordion} from "@/shared/ui/Accordion";
 import {Section} from "@/shared/ui/Section";

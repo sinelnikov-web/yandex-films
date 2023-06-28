@@ -1,8 +1,8 @@
-import React, {FC, HTMLProps} from 'react';
+import React, {ButtonHTMLAttributes, DetailedHTMLProps, FC, HTMLProps} from 'react';
 import styles from './Button.module.scss';
 import classNames from "classnames";
 
-type ButtonProps = HTMLProps<HTMLButtonElement> & {
+type ButtonProps = DetailedHTMLProps<ButtonHTMLAttributes<HTMLButtonElement>, HTMLButtonElement> & {
     variant?: 'contained' | 'outlined'
 };
 

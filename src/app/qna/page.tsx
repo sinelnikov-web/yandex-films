@@ -1,3 +1,3 @@
-import {QnA} from "@/pages/QnA";
+import {QnA} from "@/page/QnA";
 
 export default QnA;

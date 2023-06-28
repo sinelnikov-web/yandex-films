@@ -7,7 +7,7 @@ export const reviewApi = createApi({
         baseUrl: 'http://localhost:3001/api/'
     }),
     endpoints: (build) => ({
-        fetchReviewsByFilmId: build.query<ReviewType, string>({
+        fetchReviewsByFilmId: build.query<ReviewType[], string>({
             query: (movieId) => ({
                 url:  "reviews/",
                 params: {movieId}

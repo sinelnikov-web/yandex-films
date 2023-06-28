@@ -1,4 +1,4 @@
-import React, {FC, forwardRef, RefObject, useCallback, useRef, useState} from 'react';
+import React, {FC, forwardRef, MutableRefObject, RefObject, useCallback, useRef, useState} from 'react';
 import styles from './Select.module.scss';
 import classNames from "classnames";
 import {Input, InputProps} from "@/shared/ui/Input";
@@ -17,7 +17,7 @@ type SelectProps = Omit<InputProps, 'value' | 'onSelect'> & {
 };
 
 const Select: FC<SelectProps> = ({className, items, onSelect, value, ...props}) => {
-    const inputRef = useRef<null | HTMLInputElement>(null);
+    const inputRef = useRef<HTMLInputElement>();
     const [dropdownOpen, setDropdownOpen] = useState(false);
 
     const handleOpenDropdown = () => setDropdownOpen(true);
@@ -34,9 +34,9 @@ const Select: FC<SelectProps> = ({className, items, onSelect, value, ...props}) 
             className={classNames(styles.select, {className})}
         >
             <Input
-                ref={inputRef}
+                inputRef={inputRef}
                 value={value ? items.find(item => item.id === value)?.label : ''}
-                {...props}
+                {...props as any}
             />
             <div className={classNames(styles.select__arrow, {[styles.select__arrow_open]: dropdownOpen})}>
 
@@ -47,7 +47,7 @@ const Select: FC<SelectProps> = ({className, items, onSelect, value, ...props}) 
 };
 
 type DropdownProps = {
-    anchorElement: RefObject<HTMLElement | null>;
+    anchorElement: MutableRefObject<HTMLInputElement | undefined>;
     items: Array<SelectItem>;
     onSelect: (item: SelectItem) => void;
 }

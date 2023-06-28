@@ -1,5 +1,4 @@
 import {createApi, fetchBaseQuery} from '@reduxjs/toolkit/query/react'
-import {Film} from "@/entities/FilmCard/model/types/filmsState";
 
 export const cinemaApi = createApi({
     reducerPath: 'cinemaApi',
@@ -7,7 +6,7 @@ export const cinemaApi = createApi({
         baseUrl: 'http://localhost:3001/api/'
     }),
     endpoints: (build) => ({
-        fetchAllCinemas: build.query<Film[], void>({
+        fetchAllCinemas: build.query<any, void>({
             query: () => ({
                 url: `cinemas/`
             })

@@ -1,17 +1,18 @@
-import React, {FC, forwardRef, HTMLProps} from 'react';
+import React, {FC, forwardRef, HTMLProps, RefObject} from 'react';
 import styles from './Input.module.scss';
 import classNames from "classnames";
 
 export type InputProps = HTMLProps<HTMLInputElement> & {
     fullWidth?: boolean;
+    inputRef?: RefObject<HTMLInputElement>;
 };
 
-const Input: FC<InputProps> = forwardRef(({className, style, fullWidth, ...props}, ref) => {
+const Input: FC<InputProps> = ({className, style, fullWidth, inputRef, ...props}) => {
     return (
         <input
             className={classNames(styles.input, {className})}
             type="text"
-            ref={ref}
+            ref={inputRef}
             style={{
                 ...style,
                 width: fullWidth ? '100%' : 'auto'
@@ -19,6 +20,6 @@ const Input: FC<InputProps> = forwardRef(({className, style, fullWidth, ...props
             {...props}
         />
     );
-});
+};
 
 export default Input;

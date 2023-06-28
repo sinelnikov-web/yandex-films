@@ -15,7 +15,7 @@ const FilmDetailCard: FC<FilmDetailCardProps> = ({filmId}) => {
         isLoading
     } = useFetchFilmByIdQuery(filmId);
 
-    if (isLoading) {
+    if (isLoading || !data) {
         return null;
     }
 
