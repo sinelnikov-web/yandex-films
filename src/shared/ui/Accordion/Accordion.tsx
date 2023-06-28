@@ -1,3 +1,4 @@
+'use client'
 import React, {FC, ReactNode, useState, MouseEvent} from 'react';
 import styles from './Accordion.module.scss';
 import ArrowUp from '@/shared/icons/arrow-up.svg';
