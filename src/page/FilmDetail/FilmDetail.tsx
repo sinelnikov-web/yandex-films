@@ -1,6 +1,6 @@
 'use client'
 import React from 'react';
-import {useFetchFilmByIdQuery} from "@/entities/FilmCard";
+import {useFetchFilmByIdQuery} from "@/entities/Film";
 import styles from './FilmDetail.module.scss';
 import {Section} from "@/shared/ui/Section";
 import {FilmDetailCard} from "@/widgets/FilmDetailCard";

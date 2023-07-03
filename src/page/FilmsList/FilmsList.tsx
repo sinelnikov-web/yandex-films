@@ -1,9 +1,9 @@
 'use client'
 import React from 'react';
 import {Filters, filtersSelector} from "@/widgets/Filters";
-import {FilmCard} from "@/entities/FilmCard";
+import {FilmCard} from "@/entities/Film";
 import styles from './FilmsList.module.scss';
-import {useFetchAllFilmsQuery} from '@/entities/FilmCard'
+import {useFetchAllFilmsQuery} from '@/entities/Film'
 import FilmCounter from "@/features/FilmCounter/ui/FilmCounter";
 import {useSelector} from "react-redux";
 

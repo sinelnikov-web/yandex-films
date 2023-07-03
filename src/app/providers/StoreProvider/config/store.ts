@@ -1,6 +1,6 @@
 import {configureStore} from "@reduxjs/toolkit";
-import {cinemaApi, filmsApi} from "@/entities/FilmCard";
-import {basketReducer} from "@/features/Basket";
+import {cinemaApi, filmsApi} from "@/entities/Film";
+import {basketReducer} from "@/entities/Basket";
 import {filtersReducer} from "@/widgets/Filters";
 import {reviewApi} from "@/entities/Review";
 

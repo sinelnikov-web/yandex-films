@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import {Section} from "@/shared/ui/Section";
 import {Modal} from "@/shared/ui/Modal";
 import styles from './BasketModal.module.scss';
-import {Button} from "@/shared/Button";
+import {Button} from "@/shared/ui/Button";
 import CloseIcon from '@/shared/icons/close.svg';
 
 interface BasketModalProps {

@@ -1,7 +1,7 @@
 import React, {FC, Fragment, useState} from 'react';
 import {SmallButton} from "@/shared/ui/SmallButton";
 import {useDispatch, useSelector} from "react-redux";
-import {basketActions, basketSelector} from "@/features/Basket";
+import {basketActions, basketSelector} from "@/entities/Basket";
 import styles from './FilmCounter.module.scss';
 import {BasketModal} from "@/widgets/BasketModal";
 import CloseIcon from '@/shared/icons/close.svg';

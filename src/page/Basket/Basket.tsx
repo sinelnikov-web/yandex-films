@@ -1,8 +1,8 @@
 'use client'
 import React, {useMemo} from 'react';
 import {useSelector} from "react-redux";
-import {basketSelector} from "@/features/Basket";
-import {FilmCard, useFetchAllFilmsQuery} from "@/entities/FilmCard";
+import {basketSelector} from "@/entities/Basket";
+import {FilmCard, useFetchAllFilmsQuery} from "@/entities/Film";
 import FilmCounter from "@/features/FilmCounter/ui/FilmCounter";
 import styles from './Basket.module.scss';
 import {Section} from "@/shared/ui/Section";

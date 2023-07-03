@@ -3,7 +3,7 @@ import styles from './Filters.module.scss';
 import {Input} from "@/shared/ui/Input";
 import {FormField} from "@/shared/ui/FormField";
 import {Select} from "@/shared/ui/Select";
-import {useFetchAllCinemasQuery, useFetchAllFilmsQuery} from "@/entities/FilmCard";
+import {useFetchAllCinemasQuery, useFetchAllFilmsQuery} from "@/entities/Film";
 import {getUniqueGenres} from "../lib/getUniqueGenres";
 import {useDispatch, useSelector} from "react-redux";
 import {filtersActions, filtersSelector} from "../model";

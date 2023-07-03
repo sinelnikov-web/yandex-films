@@ -2,7 +2,7 @@ import React, {FC} from 'react';
 import styles from './FilmDetailCard.module.scss';
 import {Section} from "@/shared/ui/Section";
 import Image from "next/image";
-import {useFetchFilmByIdQuery} from "@/entities/FilmCard";
+import {useFetchFilmByIdQuery} from "@/entities/Film";
 import FilmCounter from "@/features/FilmCounter/ui/FilmCounter";
 
 interface FilmDetailCardProps {

@@ -2,7 +2,7 @@ import React from 'react';
 import styles from './Header.module.scss';
 import BasketIcon from '@/shared/icons/basket.svg';
 import {useSelector} from "react-redux";
-import {basketSelector} from "@/features/Basket";
+import {basketSelector} from "@/entities/Basket";
 import Link from "next/link";
 
 export const Header = () => {
